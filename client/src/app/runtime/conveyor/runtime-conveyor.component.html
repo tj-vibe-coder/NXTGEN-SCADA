@@ -15,10 +15,10 @@
         </div>
 
         <svg viewBox="0 0 840 260" class="conveyor-svg">
-            <rect x="60" y="120" width="720" height="40" rx="6" fill="var(--formInputBackground)" stroke="var(--formBorder)" stroke-width="2"></rect>
+            <rect x="60" y="120" width="720" height="40" rx="6" fill="var(--formInputBackground)" stroke="var(--toolboxColor)" stroke-width="2"></rect>
             <line *ngFor="let n of segments"
                   [attr.x1]="70 + n * 44" y1="120" [attr.x2]="70 + n * 44 - 14" y2="160"
-                  stroke="var(--formBorder)" stroke-width="2"></line>
+                  stroke="var(--toolboxColor)" stroke-width="1" stroke-opacity="0.5"></line>
 
             <circle cx="60" cy="140" r="20" fill="none" stroke="var(--toolboxColor)" stroke-width="3"></circle>
             <circle cx="780" cy="140" r="20" fill="none" stroke="var(--toolboxColor)" stroke-width="3"></circle>
@@ -30,7 +30,7 @@
             </ng-container>
 
             <ng-container *ngFor="let sensor of sensors">
-                <line [attr.x1]="sensor.x" y1="90" [attr.x2]="sensor.x" y2="120" stroke="var(--formBorder)" stroke-width="2"></line>
+                <line [attr.x1]="sensor.x" y1="90" [attr.x2]="sensor.x" y2="120" stroke="var(--toolboxColor)" stroke-width="1" stroke-opacity="0.5"></line>
                 <path [attr.d]="'M ' + (sensor.x - 8) + ' 78 L ' + (sensor.x + 8) + ' 78 L ' + sensor.x + ' 92 Z'"
                       [attr.fill]="sensor.active ? statusColors['running'] : statusColors['critical']"></path>
                 <text [attr.x]="sensor.x" y="70" text-anchor="middle" class="sensor-label">{{sensor.label}}</text>
