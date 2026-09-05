@@ -30,6 +30,7 @@ import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.componen
 import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
 import { RuntimeReportsComponent } from './runtime/reports/runtime-reports.component';
 import { RuntimeMaintenanceComponent } from './runtime/maintenance/runtime-maintenance.component';
+import { RuntimeUsersComponent } from './runtime/users/runtime-users.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
@@ -67,6 +68,7 @@ const appRoutes: Routes = [
             { path: 'trends', component: RuntimeTrendsComponent },
             { path: 'reports', component: RuntimeReportsComponent },
             { path: 'maintenance', component: RuntimeMaintenanceComponent },
+            { path: 'users', component: RuntimeUsersComponent },
         ]
     },
 

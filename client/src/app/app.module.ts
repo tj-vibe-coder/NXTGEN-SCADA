@@ -248,6 +248,7 @@ import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.componen
 import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
 import { RuntimeReportsComponent } from './runtime/reports/runtime-reports.component';
 import { RuntimeMaintenanceComponent } from './runtime/maintenance/runtime-maintenance.component';
+import { RuntimeUsersComponent } from './runtime/users/runtime-users.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -445,7 +446,8 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         RuntimeAlarmsComponent,
         RuntimeTrendsComponent,
         RuntimeReportsComponent,
-        RuntimeMaintenanceComponent
+        RuntimeMaintenanceComponent,
+        RuntimeUsersComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         FormsModule,

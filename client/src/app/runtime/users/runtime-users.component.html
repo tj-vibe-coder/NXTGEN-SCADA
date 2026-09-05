@@ -1,0 +1,25 @@
+<div class="runtime-screen">
+    <div class="runtime-panel">
+        <h2 class="runtime-panel-title">User Management</h2>
+        <table class="runtime-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Last Login</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{user.name}}</td>
+                    <td><span class="role-badge" [class]="roleClass(user.role)">{{user.role}}</span></td>
+                    <td>{{user.lastLogin}}</td>
+                    <td>
+                        <span class="status-dot" [style.background]="user.active ? '#22c55e' : '#6b7280'"></span>{{user.active ? 'Online' : 'Offline'}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
