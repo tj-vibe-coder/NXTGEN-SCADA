@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.angular/
+server/_appdata/
+server/_db/
+server/_logs/
+server/_images/
+*.log
