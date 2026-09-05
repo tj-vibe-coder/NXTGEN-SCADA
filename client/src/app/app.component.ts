@@ -150,7 +150,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
 	isHidden() {
 		const urlEnd = this.location.path();
-		if (!urlEnd || urlEnd.startsWith('/home') || urlEnd === '/lab' || this.isArViewRoute(urlEnd)) {
+		if (!urlEnd || urlEnd.startsWith('/home') || urlEnd === '/lab' || urlEnd.startsWith('/runtime') || this.isArViewRoute(urlEnd)) {
 			return true;
 		}
 		return false;
@@ -161,6 +161,9 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 		if (route.startsWith('/view')) {
             return 'work-void';
         }
+		if (route.startsWith('/runtime')) {
+            return 'work-void';
+        }
 		if (this.isArViewRoute(route)) {
             return 'work-void';
         }
@@ -169,7 +172,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     showDevNavigation() {
         const route = this.location.path();
-        if (route.startsWith('/view') || this.isArViewRoute(route)) {
+        if (route.startsWith('/view') || route.startsWith('/runtime') || this.isArViewRoute(route)) {
             return false;
         }
         return this.showdev;

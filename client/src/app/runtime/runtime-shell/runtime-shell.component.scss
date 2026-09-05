@@ -1,0 +1,56 @@
+.runtime-shell {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.runtime-sidebar {
+    width: 220px;
+    flex: 0 0 220px;
+    background: var(--sidenavBackground);
+    border-right: 1px solid var(--formBorder);
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.runtime-sidebar-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8px 20px 20px 20px;
+    color: var(--toolboxItemActiveBackground);
+}
+
+.runtime-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: var(--toolboxColor);
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.runtime-nav-item:hover {
+    background: var(--formInputBackground);
+}
+
+.runtime-nav-item.active {
+    background: var(--formInputBackground);
+    border-left-color: var(--toolboxItemActiveBackground);
+    color: var(--toolboxItemActiveBackground);
+    font-weight: 600;
+}
+
+.runtime-content {
+    flex: 1 1 auto;
+    overflow: auto;
+    background: var(--workPanelBackground);
+}

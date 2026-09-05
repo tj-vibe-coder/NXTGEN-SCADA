@@ -1,0 +1,57 @@
+.runtime-screen {
+    padding: 24px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: var(--workPanelBackground);
+    color: inherit;
+}
+
+.runtime-panel {
+    background: var(--formExtBackground);
+    border: 1px solid var(--formBorder);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.runtime-panel-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.2px;
+}
+
+.kpi-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.kpi-tile {
+    flex: 1 1 160px;
+    background: var(--formInputBackground);
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--toolboxItemActiveBackground);
+}
+
+.kpi-label {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}

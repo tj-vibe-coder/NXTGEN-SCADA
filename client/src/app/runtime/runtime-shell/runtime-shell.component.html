@@ -1,0 +1,15 @@
+<div class="runtime-shell">
+    <nav class="runtime-sidebar">
+        <div class="runtime-sidebar-title">NXTGEN</div>
+        <a *ngFor="let item of navItems"
+           class="runtime-nav-item"
+           [routerLink]="[item.path]"
+           routerLinkActive="active">
+            <mat-icon>{{item.icon}}</mat-icon>
+            <span>{{item.label}}</span>
+        </a>
+    </nav>
+    <main class="runtime-content">
+        <router-outlet></router-outlet>
+    </main>
+</div>
