@@ -26,6 +26,7 @@ import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
 import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
 import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
+import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
@@ -59,6 +60,7 @@ const appRoutes: Routes = [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: RuntimeHomeComponent },
             { path: 'conveyor', component: RuntimeConveyorComponent },
+            { path: 'alarms', component: RuntimeAlarmsComponent },
         ]
     },
 

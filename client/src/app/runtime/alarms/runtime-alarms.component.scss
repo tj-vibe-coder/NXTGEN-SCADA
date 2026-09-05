@@ -1,0 +1,31 @@
+.alarm-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.alarm-banner.has-active {
+    opacity: 1;
+    border-color: var(--toolboxItemActiveBackground);
+}
+
+.runtime-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.runtime-table th {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--formBorder);
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.runtime-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--formBorder);
+}

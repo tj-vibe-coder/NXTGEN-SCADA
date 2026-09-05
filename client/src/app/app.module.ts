@@ -244,6 +244,7 @@ import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
 import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
 import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
+import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -437,7 +438,8 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         ArViewComponent,
         RuntimeShellComponent,
         RuntimeHomeComponent,
-        RuntimeConveyorComponent
+        RuntimeConveyorComponent,
+        RuntimeAlarmsComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         FormsModule,
