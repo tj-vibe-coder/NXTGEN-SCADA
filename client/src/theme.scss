@@ -66,7 +66,7 @@ $my-radio-theme: mat.m2-define-light-theme((
 @include mat.radio-theme($my-radio-theme);
 
 // Button theme
-$my-button-primary: mat.m2-define-palette(mat.$m2-cyan-palette, A200);
+$my-button-primary: mat.m2-define-palette(mat.$m2-cyan-palette, 700);
 $my-button-accent: mat.m2-define-palette(mat.$m2-red-palette, 600);
 $my-button-warn: mat.m2-define-palette(mat.$m2-red-palette, 600);
 $my-button-theme: mat.m2-define-light-theme((

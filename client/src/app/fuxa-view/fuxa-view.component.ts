@@ -254,7 +254,7 @@ export class FuxaViewComponent implements OnInit, AfterViewInit, OnDestroy {
                 this.viewRenderDelay = view.profile?.viewRenderDelay || 0;
             }
         } catch (err) {
-            console.error('FUXA loadHmi error', err);
+            console.error('NXTGEN loadHmi error', err);
         } finally {
             // Garantisce sempre il completamento
             setTimeout(() => {

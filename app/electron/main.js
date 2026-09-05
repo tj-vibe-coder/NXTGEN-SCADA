@@ -35,7 +35,7 @@ function getRecentProjectsMenuItems(win) {
                     await restartApp(dataDir, win);
                 } catch (error) {
                     console.error('Failed to open recent project:', error.message);
-                    await dialog.showErrorBox('FUXA Error', `Failed to open project: ${error.message}`);
+                    await dialog.showErrorBox('NXTGEN Error', `Failed to open project: ${error.message}`);
                     
                     // Remove invalid project from recent list
                     removeRecentProject(project.path);
@@ -146,7 +146,7 @@ async function createNewProject(parentWin) {
             title: 'Create New Project',
             defaultPath: path.join(os.homedir(), 'FUXA-Project'),
             buttonLabel: 'Create',
-            filters: [{ name: 'FUXA Project', extensions: [''] }],
+            filters: [{ name: 'NXTGEN Project', extensions: [''] }],
             properties: ['createDirectory']
         });
         if (canceled || !filePath) return null;
@@ -160,7 +160,7 @@ async function createNewProject(parentWin) {
         return dataDir;
     } catch (error) {
         console.error('Error:', error.message);
-        await dialog.showErrorBox('FUXA Error', `Failed to create project: ${error.message}`);
+        await dialog.showErrorBox('NXTGEN Error', `Failed to create project: ${error.message}`);
         return null;
     }
 }
@@ -190,7 +190,7 @@ async function openProject(parentWin) {
         const dataDir = path.join(projectDir, 'data');
         const appDataDir = path.join(dataDir, '_appdata');
         
-        // Check if this is a valid FUXA project
+        // Check if this is a valid NXTGEN project
         await fs.access(dataDir);
         await fs.access(appDataDir);
         
@@ -198,7 +198,7 @@ async function openProject(parentWin) {
         return dataDir;
     } catch (error) {
         console.error('Failed to open project:', error.message);
-        await dialog.showErrorBox('FUXA Error', `Invalid project: The selected folder is not a valid FUXA project. Please select a folder containing a 'data/_appdata' directory.`);
+        await dialog.showErrorBox('NXTGEN Error', `Invalid project: The selected folder is not a valid NXTGEN project. Please select a folder containing a 'data/_appdata' directory.`);
         return null;
     }
 }
@@ -392,7 +392,7 @@ function createWindow() {
                             }
                         } catch (error) {
                             console.error('New project failed:', error.message);
-                            await dialog.showErrorBox('FUXA Error', `New project failed: ${error.message}`);
+                            await dialog.showErrorBox('NXTGEN Error', `New project failed: ${error.message}`);
                         }
                     }
                 },
@@ -409,7 +409,7 @@ function createWindow() {
                                     }
                                 } catch (error) {
                                     console.error('Open project failed:', error.message);
-                                    await dialog.showErrorBox('FUXA Error', `Open project failed: ${error.message}`);
+                                    await dialog.showErrorBox('NXTGEN Error', `Open project failed: ${error.message}`);
                                 }
                             }
                         },
@@ -447,7 +447,7 @@ function createWindow() {
             label: 'Help',
             submenu: [
                 {
-                    label: 'FUXA Documentation',
+                    label: 'NXTGEN Documentation',
                     click: () => shell.openExternal('https://github.com/frangoteam/FUXA/wiki')
                 }
             ]
@@ -519,7 +519,7 @@ async function restartApp(dataDir, win) {
         console.log(`Server started with dataDir: ${dataDir}`);
     } catch (error) {
         console.error(`Failed to start server: ${error.message}`);
-        await dialog.showErrorBox('FUXA Error', `Failed to start server: ${error.message}`);
+        await dialog.showErrorBox('NXTGEN Error', `Failed to start server: ${error.message}`);
         return;
     }
 
@@ -556,7 +556,7 @@ async function restartApp(dataDir, win) {
         }
     } catch (error) {
         console.error('Failed to load UI:', error.message);
-        await dialog.showErrorBox('FUXA Error', `Failed to load UI: ${error.message}`);
+        await dialog.showErrorBox('NXTGEN Error', `Failed to load UI: ${error.message}`);
     }
 }
 

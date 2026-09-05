@@ -20,7 +20,7 @@
   "header.edit-users": "Paramètres des utilisateurs",
   "header.edit-alarms": "Paramètres d'alarmes",
   "header.edit-texts": "Paramètres de textes",
-  "header.help": "Aide Fuxa",
+  "header.help": "Aide NXTGEN",
   "header.help-tutorial": "Didacticiel",
   "header.help-info": "À propos de",
   "header.change-thema": "Changer de thème (beta)",
@@ -29,11 +29,11 @@
 
   "project.name": "Nom du projet",
 
-  "sidenav.title": "Fuxa",
+  "sidenav.title": "NXTGEN",
 
-  "tutorial.title": "Tutoriel Fuxa",
+  "tutorial.title": "Tutoriel NXTGEN",
 
-  "dlg.info-title": "Fuxa",
+  "dlg.info-title": "NXTGEN",
 
   "dlg.layout-title": "Paramètres de mise en page",
   "dlg.layout-general": "Général",
