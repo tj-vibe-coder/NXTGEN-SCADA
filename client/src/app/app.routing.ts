@@ -29,6 +29,7 @@ import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.co
 import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
 import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
 import { RuntimeReportsComponent } from './runtime/reports/runtime-reports.component';
+import { RuntimeMaintenanceComponent } from './runtime/maintenance/runtime-maintenance.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
@@ -65,6 +66,7 @@ const appRoutes: Routes = [
             { path: 'alarms', component: RuntimeAlarmsComponent },
             { path: 'trends', component: RuntimeTrendsComponent },
             { path: 'reports', component: RuntimeReportsComponent },
+            { path: 'maintenance', component: RuntimeMaintenanceComponent },
         ]
     },
 

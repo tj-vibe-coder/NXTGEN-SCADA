@@ -247,6 +247,7 @@ import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.co
 import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
 import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
 import { RuntimeReportsComponent } from './runtime/reports/runtime-reports.component';
+import { RuntimeMaintenanceComponent } from './runtime/maintenance/runtime-maintenance.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -443,7 +444,8 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         RuntimeConveyorComponent,
         RuntimeAlarmsComponent,
         RuntimeTrendsComponent,
-        RuntimeReportsComponent
+        RuntimeReportsComponent,
+        RuntimeMaintenanceComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         FormsModule,
