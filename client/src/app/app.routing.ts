@@ -25,6 +25,7 @@ import { ArMarkerListComponent } from './ar/ar-marker-list/ar-marker-list.compon
 import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
 import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
+import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: RuntimeHomeComponent },
+            { path: 'conveyor', component: RuntimeConveyorComponent },
         ]
     },
 

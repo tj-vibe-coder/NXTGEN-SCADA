@@ -243,6 +243,7 @@ import { ArMarkerPropertyComponent } from './ar/ar-marker-property/ar-marker-pro
 import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
 import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
+import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -435,7 +436,8 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         ArMarkerPropertyComponent,
         ArViewComponent,
         RuntimeShellComponent,
-        RuntimeHomeComponent
+        RuntimeHomeComponent,
+        RuntimeConveyorComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         FormsModule,
