@@ -8,8 +8,8 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    background: var(--formInputBackground);
-    border-left: 4px solid var(--formBorder);
+    background: var(--formExtInputBackground);
+    border-left: 4px solid var(--runtimeHairline);
     border-radius: 6px;
     padding: 12px 16px;
 }

@@ -9,7 +9,7 @@
 
 .runtime-panel {
     background: var(--formExtBackground);
-    border: 1px solid var(--formBorder);
+    border: 1px solid var(--runtimeHairline);
     border-radius: 10px;
     padding: 16px 20px;
     margin-bottom: 20px;
@@ -30,7 +30,7 @@
 
 .kpi-tile {
     flex: 1 1 160px;
-    background: var(--formInputBackground);
+    background: var(--formExtInputBackground);
     border-radius: 8px;
     padding: 14px 16px;
 }

@@ -1,5 +1,6 @@
 export const THEMES = {
     default: {
+        runtimeHairline: 'rgba(0,0,0,0.2)',
         headerBackground: 'hsl(0, 0%, 100%)',
         headerColor: 'rgba(33,33,33,0.92)',
         headerBorder: '#f9f9f9',
@@ -42,6 +43,7 @@ export const THEMES = {
         inputTime: 'invert(0%)',
     },
     dark: {
+        runtimeHairline: 'rgba(255,255,255,0.2)',
         headerBackground: '#333333',
         headerColor: 'rgba(255,255,255,1)',
         tableHeaderColor: 'rgba(255,255,255,0.7)',

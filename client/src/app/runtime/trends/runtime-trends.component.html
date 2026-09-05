@@ -10,7 +10,7 @@
             <g transform="translate(20,20)">
                 <line *ngFor="let g of gridLines"
                       x1="0" [attr.y1]="g * 40" x2="720" [attr.y2]="g * 40"
-                      stroke="var(--formBorder)" stroke-width="1"></line>
+                      stroke="var(--runtimeHairline)" stroke-width="1"></line>
                 <path *ngFor="let s of series; let i = index"
                       [attr.d]="pointsToPath(s.points, minima[i], maxima[i])"
                       fill="none" [attr.stroke]="s.color" stroke-width="2.5"></path>
