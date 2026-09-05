@@ -5,4 +5,6 @@ server/_appdata/
 server/_db/
 server/_logs/
 server/_images/
+server/_pkg/
+server/_widgets/
 *.log

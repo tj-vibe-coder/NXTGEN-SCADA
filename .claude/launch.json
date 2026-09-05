@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "nxtgen-server",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "server", "start"],
+      "port": 1881
+    },
+    {
+      "name": "nxtgen-client",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "client", "start"],
+      "port": 4200
+    }
+  ]
+}
