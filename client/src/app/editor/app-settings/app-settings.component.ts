@@ -148,7 +148,7 @@ export class AppSettingsComponent implements OnInit {
 
     onSmtpTest() {
         this.smtpTesting = true;
-        let msg = <MailMessage>{ from: this.settings.smtp.mailsender || this.settings.smtp.username, to: this.smtpTestAddress, subject: 'FUXA', text: 'TEST' };
+        let msg = <MailMessage>{ from: this.settings.smtp.mailsender || this.settings.smtp.username, to: this.smtpTestAddress, subject: 'NXTGEN', text: 'TEST' };
         this.diagnoseService.sendMail(msg, this.settings.smtp).subscribe(() => {
             this.smtpTesting = false;
             var msg = '';

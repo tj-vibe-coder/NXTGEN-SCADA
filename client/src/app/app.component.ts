@@ -50,7 +50,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 	}
 
 	ngOnInit() {
-		console.log(`FUXA v${environment.version}`);
+		console.log(`NXTGEN v${environment.version}`);
 		this.heartbeatService.startHeartbeatPolling();
 
 		// capture events for the token refresh

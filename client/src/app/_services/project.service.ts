@@ -106,7 +106,7 @@ export class ProjectService {
             }
         }, err => {
             if (requestId === this.projectLoadRequestId) {
-                console.error('FUXA onRefreshProject error', err);
+                console.error('NXTGEN onRefreshProject error', err);
             }
         });
         return true;
@@ -145,7 +145,7 @@ export class ProjectService {
             }
         }, err => {
             if (requestId === this.projectLoadRequestId) {
-                console.error('FUXA load error', err);
+                console.error('NXTGEN load error', err);
             }
         });
     }
@@ -1120,7 +1120,7 @@ export class ProjectService {
     }
 
     private notifySaveError(err: any) {
-        console.error('FUXA notifySaveError error', err);
+        console.error('NXTGEN notifySaveError error', err);
         let msg = this.translateService.instant('msg.project-save-error');
         if (err.status === 401) {
             msg = this.translateService.instant('msg.project-save-unauthorized');
@@ -1137,7 +1137,7 @@ export class ProjectService {
     }
 
     private notifyServerError() {
-        console.error('FUXA notifyServerError error');
+        console.error('NXTGEN notifyServerError error');
         let msg = null;
         this.translateService.get('msg.server-connection-error').subscribe((txt: string) => { msg = txt; });
         if (msg) {
@@ -1152,7 +1152,7 @@ export class ProjectService {
     private notifyError(msgCode: string) {
         this.translateService.get(msgCode).subscribe((msg: string) => {
             if (msg) {
-                console.error(`FUXA Error: ${msg}`);
+                console.error(`NXTGEN Error: ${msg}`);
                 this.toastr.error(msg, '', {
                     timeOut: 3000,
                     closeButton: true,
@@ -1394,7 +1394,7 @@ export class ProjectService {
     }
 
     /**
-     * Check to add or remove system Tags, example connection status to add in device FUXA server
+     * Check to add or remove system Tags, example connection status to add in device NXTGEN server
      */
     checkSystemTags() {
         let devices = Object.values(this.projectData.devices).filter((device: Device) => device.id !== FuxaServer.id);
