@@ -1,7 +1,7 @@
 {
-    "name": "fuxa",
+    "name": "nxtgen",
     "version": "0.0.1",
-    "description": "FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. With FUXA you can create modern process visualizations with individual designs for your machines and real-time data display.",
+    "description": "NXTGEN is a web-based Process Visualization (SCADA/HMI/Dashboard) software, based on FUXA. Create modern process visualizations with individual designs for your machines and real-time data display.",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
@@ -22,8 +22,8 @@
         "tar": "7.5.20"
     },
     "build": {
-        "appId": "com.frangoteam.fuxa",
-        "productName": "FUXA",
+        "appId": "com.nxtgen.app",
+        "productName": "NXTGEN",
         "asar": false,
         "files": [
             "main.js",

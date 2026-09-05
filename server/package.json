@@ -1,7 +1,7 @@
 {
-  "name": "fuxa-server",
+  "name": "nxtgen-server",
   "version": "1.3.4-2890",
-  "description": "Web-based Process Visualization (SCADA/HMI/Dashboard) software",
+  "description": "NXTGEN is a web-based Process Visualization (SCADA/HMI/Dashboard) software, based on FUXA.",
   "main": "main.js",
   "scripts": {
     "test": "mocha --recursive --timeout 10000",
