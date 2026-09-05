@@ -27,6 +27,7 @@ import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.com
 import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
 import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
 import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
+import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
@@ -61,6 +62,7 @@ const appRoutes: Routes = [
             { path: 'home', component: RuntimeHomeComponent },
             { path: 'conveyor', component: RuntimeConveyorComponent },
             { path: 'alarms', component: RuntimeAlarmsComponent },
+            { path: 'trends', component: RuntimeTrendsComponent },
         ]
     },
 
