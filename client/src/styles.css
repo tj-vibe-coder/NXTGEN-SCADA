@@ -1268,3 +1268,17 @@ mat-toolbar-row {
     justify-content: center;
     align-items: center;
   }
+
+/* NXTGEN visual polish: softer corners/elevation on dialogs and cards */
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  border-radius: 12px !important;
+}
+
+.mat-mdc-card {
+  border-radius: 10px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dark-theme .mat-mdc-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+}
