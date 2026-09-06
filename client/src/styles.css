@@ -1269,7 +1269,7 @@ mat-toolbar-row {
     align-items: center;
   }
 
-/* NXTGEN visual polish: softer corners/elevation on dialogs and cards */
+/* LEAR visual polish: softer corners/elevation on dialogs and cards */
 .mat-mdc-dialog-container .mdc-dialog__surface {
   border-radius: 12px !important;
 }

@@ -597,7 +597,7 @@ function startFuxa() {
 
             server.listen(settings.uiPort, settings.uiHost, function () {
                 settings.serverPort = server.address().port;
-                process.title = 'NXTGEN';
+                process.title = 'LEAR';
                 logger.info('WebServer is running ' + getListenPath());
             });
         } else {

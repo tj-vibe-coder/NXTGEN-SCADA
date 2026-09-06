@@ -1,7 +1,7 @@
 {
-  "name": "nxtgen-server",
+  "name": "lear-scada-server",
   "version": "1.3.4-2890",
-  "description": "NXTGEN is a web-based Process Visualization (SCADA/HMI/Dashboard) software, based on FUXA.",
+  "description": "LEAR is a web-based Process Visualization (SCADA/HMI/Dashboard) software, based on FUXA.",
   "main": "main.js",
   "scripts": {
     "test": "mocha --recursive --timeout 10000",

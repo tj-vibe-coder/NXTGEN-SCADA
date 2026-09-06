@@ -7,4 +7,5 @@ server/_logs/
 server/_images/
 server/_pkg/
 server/_widgets/
+server/_reports/
 *.log

@@ -3,7 +3,7 @@ import { Script } from './script';
 
 export const FuxaServer = {
     id: '0',
-    name: 'NXTGEN'
+    name: 'LEAR'
 };
 
 export const PlaceholderDevice = {
@@ -92,7 +92,7 @@ export class Tag {
     scaleWriteFunction?: string;
     /** Optional JSON encoded params and values for above script */
     scaleWriteParams?: string;
-    /** System Tag used in NXTGEN Server, example device status connection */
+    /** System Tag used in LEAR Server, example device status connection */
     sysType: TagSystemType;
     /** Description */
     description?: string;

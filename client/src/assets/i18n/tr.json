@@ -19,16 +19,16 @@
 	"header.edit-users": "Kullanıcı Ayarları",
 	"header.edit-alarms": "Alarm Ayarları",
 	"header.edit-texts": "Metin Ayarları",
-	"header.help": "NXTGEN Yardımı",
+	"header.help": "LEAR Yardımı",
 	"header.help-tutorial": "Öğretici",
 	"header.help-info": "Hakkında",
 	"header.info-version": "Sürüm ",
 
-	"sidenav.title": "NXTGEN",
+	"sidenav.title": "LEAR",
 
-	"tutorial.title": "NXTGEN Öğretici",
+	"tutorial.title": "LEAR Öğretici",
 
-	"dlg.info-title": "NXTGEN",
+	"dlg.info-title": "LEAR",
 
 	"dlg.layout-title": "Yerleşim Ayarları",
 	"dlg.layout-general": "Genel",
@@ -419,7 +419,7 @@
 	"device.list-value": "Değer",
 
 	"device.property-client": "Aygıt Özellikleri",
-	"device.property-server": "NXTGEN Sunucu Özellikleri",
+	"device.property-server": "LEAR Sunucu Özellikleri",
 	"device.property-name": "Ad",
 	"device.property-type": "Tipi",
 	"device.property-polling": "Aralık",

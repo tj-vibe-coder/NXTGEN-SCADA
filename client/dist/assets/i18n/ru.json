@@ -28,11 +28,11 @@
 
     "project.name": "Название проекта",
 
-    "sidenav.title": "NXTGEN",
+    "sidenav.title": "LEAR",
 
-    "tutorial.title": "Руководство NXTGEN",
+    "tutorial.title": "Руководство LEAR",
 
-    "dlg.info-title": "NXTGEN",
+    "dlg.info-title": "LEAR",
 
     "dlg.layout-title": "Настройки вида",
     "dlg.layout-general": "Общие",
@@ -691,7 +691,7 @@
     "devices.export-csv": "CSV",
     "devices.import": "Импорт устройств",
     "device.property-client": "Свойства устройства",
-    "device.property-server": "Свойства сервера NXTGEN",
+    "device.property-server": "Свойства сервера LEAR",
     "device.property-name": "Название",
     "device.property-type": "Тип",
     "device.property-polling": "Опрос",

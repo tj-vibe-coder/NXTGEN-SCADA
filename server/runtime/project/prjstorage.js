@@ -101,7 +101,7 @@ function setDefault() {
     return new Promise(function (resolve, reject) {
         var scs = [];
         scs.push({ table: TableType.GENERAL, name: 'version', value: '1.00' });
-        scs.push({ table: TableType.DEVICES, name: 'server', value: { 'id': '0', 'name': 'NXTGEN', 'type': 'FuxaServer', 'property': {} } });
+        scs.push({ table: TableType.DEVICES, name: 'server', value: { 'id': '0', 'name': 'LEAR', 'type': 'FuxaServer', 'property': {} } });
         setSections(scs).then(() => {
             resolve();
         }).catch(function (err) {

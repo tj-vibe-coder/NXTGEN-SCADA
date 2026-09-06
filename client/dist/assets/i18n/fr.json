@@ -20,7 +20,7 @@
   "header.edit-users": "Paramètres des utilisateurs",
   "header.edit-alarms": "Paramètres d'alarmes",
   "header.edit-texts": "Paramètres de textes",
-  "header.help": "Aide NXTGEN",
+  "header.help": "Aide LEAR",
   "header.help-tutorial": "Didacticiel",
   "header.help-info": "À propos de",
   "header.change-thema": "Changer de thème (beta)",
@@ -29,11 +29,11 @@
 
   "project.name": "Nom du projet",
 
-  "sidenav.title": "NXTGEN",
+  "sidenav.title": "LEAR",
 
-  "tutorial.title": "Tutoriel NXTGEN",
+  "tutorial.title": "Tutoriel LEAR",
 
-  "dlg.info-title": "NXTGEN",
+  "dlg.info-title": "LEAR",
 
   "dlg.layout-title": "Paramètres de mise en page",
   "dlg.layout-general": "Général",
@@ -883,7 +883,7 @@
   "device.tags-template-name-title": "Nom du modèle de tags",
   "devices.import-template": "Importer des appareils avec le modèle",
   "device.property-client": "Propriété de l'appareil",
-  "device.property-server": "Propriété du serveur NXTGEN",
+  "device.property-server": "Propriété du serveur LEAR",
   "device.property-name": "Nom",
   "device.property-type": "Type",
   "device.property-polling": "Freq. d'interrogation",

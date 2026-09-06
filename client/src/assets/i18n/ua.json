@@ -14,16 +14,16 @@
     "header.edit-users": "Користувацькі налаштування",
     "header.edit-alarms": "Повідомлення",
     "header.edit-texts": "Налаштування тексту",
-    "header.help": "Довідка по NXTGEN",
+    "header.help": "Довідка по LEAR",
     "header.help-tutorial": "Інструкція",
     "header.help-info": "Про програму",
     "header.info-version": "Версія ",
 
-    "sidenav.title": "NXTGEN",
+    "sidenav.title": "LEAR",
 
-    "tutorial.title": "Інструкція NXTGEN",
+    "tutorial.title": "Інструкція LEAR",
 
-    "dlg.info-title": "NXTGEN",
+    "dlg.info-title": "LEAR",
 
     "dlg.layout-title": "Налаштування шаблону",
     "dlg.layout-general": "Загальні",
@@ -394,7 +394,7 @@
     "device.list-value": "Значення",
 
     "device.property-client": "Властивості пристрою",
-    "device.property-server": "Властивості сервера NXTGEN",
+    "device.property-server": "Властивості сервера LEAR",
     "device.property-name": "Імя",
     "device.property-type": "Тип",
     "device.property-polling": "Опитування",

@@ -18,16 +18,16 @@
     "header.edit-users": "Configurações dos utilizadores",
     "header.edit-alarms": "Configurações dos Alarmes",
     "header.edit-texts": "Configurações dos Textos",
-    "header.help": "NXTGEN Ajuda",
+    "header.help": "LEAR Ajuda",
     "header.help-tutorial": "Tutorial",
     "header.help-info": "Sobre",
     "header.info-version": "Versão ",
 
-    "sidenav.title": "NXTGEN",
+    "sidenav.title": "LEAR",
 
-    "tutorial.title": "NXTGEN Tutorial",
+    "tutorial.title": "LEAR Tutorial",
 
-    "dlg.info-title": "NXTGEN",
+    "dlg.info-title": "LEAR",
 
     "dlg.layout-title": "Configurações Layout",
     "dlg.layout-general": "Geral",
@@ -424,7 +424,7 @@
     "device.list-value": "Valor",
 
     "device.property-client": "Propriedade do Aparelho",
-    "device.property-server": "Propriedade servidor NXTGEN",
+    "device.property-server": "Propriedade servidor LEAR",
     "device.property-name": "Nome",
     "device.property-type": "Tipo",
     "device.property-polling": "Polling",
