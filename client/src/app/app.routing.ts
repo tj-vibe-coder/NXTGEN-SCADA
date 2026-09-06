@@ -24,13 +24,7 @@ import { PluginsListComponent } from './plugins/plugins-list/plugins-list.compon
 import { ArMarkerListComponent } from './ar/ar-marker-list/ar-marker-list.component';
 import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
-import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
-import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
-import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
-import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
-import { RuntimeReportsComponent } from './runtime/reports/runtime-reports.component';
-import { RuntimeMaintenanceComponent } from './runtime/maintenance/runtime-maintenance.component';
-import { RuntimeUsersComponent } from './runtime/users/runtime-users.component';
+import { RuntimeViewHostComponent } from './runtime/runtime-view-host/runtime-view-host.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
@@ -62,13 +56,13 @@ const appRoutes: Routes = [
         component: RuntimeShellComponent,
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: RuntimeHomeComponent },
-            { path: 'conveyor', component: RuntimeConveyorComponent },
-            { path: 'alarms', component: RuntimeAlarmsComponent },
-            { path: 'trends', component: RuntimeTrendsComponent },
-            { path: 'reports', component: RuntimeReportsComponent },
-            { path: 'maintenance', component: RuntimeMaintenanceComponent },
-            { path: 'users', component: RuntimeUsersComponent },
+            { path: 'home', component: RuntimeViewHostComponent, data: { viewName: 'Home' } },
+            { path: 'conveyor', component: RuntimeViewHostComponent, data: { viewName: 'Conveyor Overview' } },
+            { path: 'trends', component: RuntimeViewHostComponent, data: { viewName: 'Trends' } },
+            { path: 'maintenance', component: RuntimeViewHostComponent, data: { viewName: 'Maintenance' } },
+            { path: 'alarms', component: AlarmViewComponent },
+            { path: 'reports', component: ReportListComponent },
+            { path: 'users', component: UsersComponent },
         ]
     },
 

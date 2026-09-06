@@ -242,13 +242,7 @@ import { ArMarkerListComponent } from './ar/ar-marker-list/ar-marker-list.compon
 import { ArMarkerPropertyComponent } from './ar/ar-marker-property/ar-marker-property.component';
 import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
-import { RuntimeHomeComponent } from './runtime/home/runtime-home.component';
-import { RuntimeConveyorComponent } from './runtime/conveyor/runtime-conveyor.component';
-import { RuntimeAlarmsComponent } from './runtime/alarms/runtime-alarms.component';
-import { RuntimeTrendsComponent } from './runtime/trends/runtime-trends.component';
-import { RuntimeReportsComponent } from './runtime/reports/runtime-reports.component';
-import { RuntimeMaintenanceComponent } from './runtime/maintenance/runtime-maintenance.component';
-import { RuntimeUsersComponent } from './runtime/users/runtime-users.component';
+import { RuntimeViewHostComponent } from './runtime/runtime-view-host/runtime-view-host.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -441,13 +435,7 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
         ArMarkerPropertyComponent,
         ArViewComponent,
         RuntimeShellComponent,
-        RuntimeHomeComponent,
-        RuntimeConveyorComponent,
-        RuntimeAlarmsComponent,
-        RuntimeTrendsComponent,
-        RuntimeReportsComponent,
-        RuntimeMaintenanceComponent,
-        RuntimeUsersComponent
+        RuntimeViewHostComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         FormsModule,
