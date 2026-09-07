@@ -37,6 +37,7 @@
     "mqtt": "4.3.7",
     "node-red": "^4.1.10",
     "node-schedule": "2.1.1",
+    "node-snap7": "^1.0.9",
     "nodemailer": "^8.0.8",
     "nopt": "5.0.0",
     "pdfmake": "0.2.5",
