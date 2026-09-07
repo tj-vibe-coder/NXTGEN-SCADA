@@ -25,8 +25,10 @@ import { ArMarkerListComponent } from './ar/ar-marker-list/ar-marker-list.compon
 import { ArViewComponent } from './ar/ar-view/ar-view.component';
 import { RuntimeShellComponent } from './runtime/runtime-shell/runtime-shell.component';
 import { RuntimeViewHostComponent } from './runtime/runtime-view-host/runtime-view-host.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 const appRoutes: Routes = [
+    { path: 'login', component: LoginPageComponent },
     { path: '', component: HomeComponent},//, canActivate: [AuthGuard] },
     { path: 'home', component: HomeComponent},//, canActivate: [AuthGuard] },
     { path: 'home/:viewName', component: HomeComponent},//, canActivate: [AuthGuard] },

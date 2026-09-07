@@ -14,8 +14,7 @@ import { HmiService, ScriptOpenCard, ScriptSetView } from '../_services/hmi.serv
 import { ProjectService } from '../_services/project.service';
 import { AuthService } from '../_services/auth.service';
 import { GaugesManager } from '../gauges/gauges.component';
-import { Hmi, View, ViewType, NaviModeType, NotificationModeType, ZoomModeType, HeaderSettings, LinkType, HeaderItem, Variable, GaugeStatus, GaugeSettings, GaugeEventType, LoginOverlayColorType, GaugeEvent } from '../_models/hmi';
-import { LoginComponent } from '../login/login.component';
+import { Hmi, View, ViewType, NaviModeType, NotificationModeType, ZoomModeType, HeaderSettings, LinkType, HeaderItem, Variable, GaugeStatus, GaugeSettings, GaugeEventType, GaugeEvent } from '../_models/hmi';
 import { AlarmViewComponent } from '../alarms/alarm-view/alarm-view.component';
 import { Utils } from '../_helpers/utils';
 import { GridOptions } from '../cards-view/cards-view.component';
@@ -27,7 +26,6 @@ import panzoom from 'panzoom';
 import { filter, takeUntil } from 'rxjs/operators';
 import { HtmlButtonComponent } from '../gauges/controls/html-button/html-button.component';
 import { User } from '../_models/user';
-import { UserInfo } from '../users/user-edit/user-edit.component';
 import { Intervals } from '../_helpers/intervals';
 import { Script, ScriptMode } from '../_models/script';
 import { ScriptService } from '../_services/script.service';
@@ -299,22 +297,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
                 }
             });
         } else {
-            let dialogConfig = {
-                data: {},
-                disableClose: true,
-                autoFocus: false,
-                ...(this.hmi.layout.loginoverlaycolor && this.hmi.layout.loginoverlaycolor !== LoginOverlayColorType.none) && {
-                    backdropClass: this.hmi.layout.loginoverlaycolor === LoginOverlayColorType.black ? 'backdrop-black' : 'backdrop-white'
-                }
-            };
-
-            let dialogRef = this.dialog.open(LoginComponent, dialogConfig);
-            dialogRef.afterClosed().subscribe(result => {
-                const userInfo = new UserInfo(this.authService.getUser()?.info);
-                if (userInfo.start) {
-                    this.onGoToPage(userInfo.start);
-                }
-            });
+            this.router.navigate(['/login'], { queryParams: { returnUrl: this.router.url } });
         }
     }
 

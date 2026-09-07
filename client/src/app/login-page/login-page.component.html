@@ -1,0 +1,49 @@
+<div class="login-page">
+    <div class="corner-brand">
+        <img src="assets/images/logo.svg" alt="LEAR" class="corner-logo">
+        <div class="corner-text">
+            <div class="corner-title">LEAR</div>
+            <div class="corner-sub">CORPORATION</div>
+        </div>
+    </div>
+
+    <form class="login-card" (submit)="$event.preventDefault(); onSignInClick()">
+        <img src="assets/images/logo.svg" alt="LEAR" class="card-logo">
+        <div class="card-title">LEAR</div>
+        <div class="card-sub">CORPORATION</div>
+
+        <div class="app-title">Wire Harness Conveyor System</div>
+        <div class="app-sub">Bi&#241;an Plant &middot; Sign in to continue</div>
+
+        <label class="field-label">Username</label>
+        <input class="field-input"
+               autocomplete="off"
+               type="text"
+               [formControl]="username"
+               (keydown)="onKeyDown($event)"
+               cdkFocusInitial>
+        <div class="field-error" *ngIf="errorEnabled && username.errors">Username is required</div>
+
+        <label class="field-label">Password</label>
+        <div class="password-wrap">
+            <input class="field-input"
+                   autocomplete="off"
+                   [type]="showPassword ? 'text' : 'password'"
+                   [formControl]="password"
+                   (keydown)="onKeyDown($event)">
+            <mat-icon class="show-password" (click)="showPassword = !showPassword">{{showPassword ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </div>
+        <div class="field-error" *ngIf="errorEnabled && password.errors">Password is required</div>
+
+        <div class="message-error" role="alert" aria-live="assertive" *ngIf="messageError">{{messageError}}</div>
+
+        <button type="submit" class="signin-btn" [disabled]="submitLoading">
+            <mat-spinner *ngIf="submitLoading" diameter="18"></mat-spinner>
+            <span *ngIf="!submitLoading">SIGN IN</span>
+        </button>
+
+        <div class="help-text">Forgot password? Contact your system administrator</div>
+    </form>
+
+    <div class="page-footer">Lear Corporation &nbsp;|&nbsp; Bi&#241;an Plant &nbsp;|&nbsp; Wire Harness Division</div>
+</div>
